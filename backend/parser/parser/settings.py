@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'card',
+    'djangorestframework',
+    'djangorestframework_simplejwt',
 ]
 
 MIDDLEWARE = [
