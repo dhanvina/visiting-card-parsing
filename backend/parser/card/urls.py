@@ -1,4 +1,5 @@
 from django.urls import path, include
+from rest_framework.routers import DefaultRouter
 from card.views import (
     SendPasswordResetEmailView,
     UserChangePasswordView,
@@ -8,6 +9,8 @@ from card.views import (
     UserPasswordResetView,
 )
 from rest_framework_simplejwt import views as jwt_views
+
+router = DefaultRouter()
 
 urlpatterns = [
     path('', include(router.urls)),
